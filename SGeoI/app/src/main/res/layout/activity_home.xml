@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/colorHome"
+    tools:context="wonolo.sgeoi.Activity.HomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:background="@drawable/myrect">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgv_avatar_user"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:hint="Username"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:hint="Full name"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Media"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorXamDam"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Follows"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorXamDam"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Followed_by"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorXamDam"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_media"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorXamDam"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_follows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorXamDam"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_followed_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorXamDam"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_gotomap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Go to Map"
+        android:background="@drawable/myrect"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"/>
+</LinearLayout>
